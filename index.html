@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    
+    
+    
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-604869546745f5f0"></script>
+
+    
+    
+    
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>내가 해적왕이 될 상인가</title>
+    <meta name="title" content="캐릭터상 테스트">
+    <meta name="subject" content="인공지능이 찾아주는 나와 닮은 캐릭터를 찾아보세요!">
+    <meta name="keywords" content="캐릭터상 테스트, 캐릭터상 테스트, 인공지능 캐릭터상 테스트, 얼굴상, 캐릭터상 테스트, 나와 닮은 캐릭터, 캐릭터상 찾기, 얼굴로 보는 캐릭터상, 얼굴 캐릭터, 캐릭터얼굴, 캐릭터얼굴, 인공지능 캐릭터상, 인공지능 캐릭터상, AI 얼굴상, AI 캐릭터상, AI 캐릭터상">
+    <meta name="author" content="뽀이">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="주소적어야함" />
+    <meta property="og:url" content="주소적어야함" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="캐릭터상 테스트" />
+    <meta property="og:description" content="여러 캐릭터 사진 데이터로 학습한 인공지능이 나의 얼굴로 캐릭터얼굴을 찾습니다. 회원가입도 필요없이 화면에서 바로 확인해보세요! 사진 데이터는 그 어디에도 전송되지 않습니다. 얼굴상 테스트를 통해 나와 닮은 캐릭터를 찾아시길 바랍니다."
+    />
+    <meta property="og:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fc0eq42%2FbtqCQpiFhFn%2F8KPaOP9q8PXpJFRL7if55K%2Fimg.jpg" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e64b3727e862b06"></script>
+    
+</head>
+
+<body>  
+    
+  
+     <nav class="p-3 container navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">내가 해적왕이 될 상인가</a>
+    </nav>
+    
+        
+    <section class="section">
+        <h1 class="title">AI 캐릭터상 테스트</h1>
+        <h2 class="subtitle">나는 과연 해적왕이 될 상인가?!</h2>
+        <h2 class="sr-only">나는 과연 해적왕이 될 상인가?!</h2>
+        <h3 class="sr-only">유명한 캐릭터 사진 데이터로 학습한 AI를 통해 캐릭터상을 찾아드려요.</h3>
+        <h4 class="sr-only">본 서비스는 Google의 AI teachable machine을 활용하였습니다.</h4>
+        
+    </section>
+    
+    
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <div class="mt-3 container file-upload">
+        <div class="image-upload-wrap">
+            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+            <div class="drag-text">
+               
+                <h3 class="mb-5 pt-5  upload-text">얼굴 사진을 올려놓거나 눌러서 업로드하세요!</h3>
+            </div>
+        </div>
+        <div class="file-upload-content">
+            <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+            <div id="loading" class="animated bounce">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <p class="text-center">당신의 캐릭터상을 분석중입니다.</p>
+            </div>
+            <p class="result-message"></p>
+            <div id="label-container" class="d-flex flex-column justify-content-around"></div>
+            
+            
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox_jsfm"></div>
+            
+            
+            <div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
+
+            <div class="pt-3 image-title-wrap">
+                <button type="button p-2" class="try-again-btn" onclick="window.location.reload();">
+                    <span class="try-again-text">다른 사진으로 재시도</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    
+    <footer class="footer pt-5 container d-flex justify-content-center">
+        <div>
+            <p><a href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg">제작 도움: 조코딩 유튜브 채널 </a></p>
+        </div>
+    </footer>
+    
+    
+    
+    <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://ppo-oi.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+    
+    
+    
+    
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('.image-upload-wrap').hide();
+                    $('#loading').show();
+                    $('.file-upload-image').attr('src', e.target.result);
+                    $('.file-upload-content').show();
+                    $('.image-title').html(input.files[0].name);
+                };
+                reader.readAsDataURL(input.files[0]);
+                init().then(function() {
+                    console.log("hello");
+                    predict();
+                    $('#loading').hide();
+                });
+            } else {
+                removeUpload();
+            }
+        }
+
+        function removeUpload() {
+            $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+            $('.file-upload-content').hide();
+            $('.image-upload-wrap').show();
+        }
+        $('.image-upload-wrap').bind('dragover', function() {
+            $('.image-upload-wrap').addClass('image-dropping');
+        });
+        $('.image-upload-wrap').bind('dragleave', function() {
+            $('.image-upload-wrap').removeClass('image-dropping');
+        });
+    </script>
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>   
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    
+    
+
+    
+    
+    
+    
+    <script type="text/javascript">
+        const URL = "https://teachablemachine.withgoogle.com/models/gBLpqhGZR/";
+       
+        let model, webcam, labelContainer, maxPredictions;
+        async function init() {
+            
+            const modelURL = URL + "model.json";
+            const metadataURL = URL + "metadata.json";
+            model = await tmImage.load(modelURL, metadataURL);
+            maxPredictions = model.getTotalClasses();
+            
+            labelContainer = document.getElementById("label-container");
+            for (let i = 0; i < 5; i++) {
+                var element = document.createElement("div")
+                element.classList.add("d-flex");
+                labelContainer.appendChild(element);
+            }
+        }
+        
+        
+        async function predict() {
+            var image = document.getElementById("face-image")
+            const prediction = await model.predict(image, false);
+            
+            prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+            
+            
+            console.log(prediction[0].className);
+            
+            var resultTitle, resultExplain, resultCeleb;
+            // if (document.getElementById("gender").checked) {
+                switch (prediction[0].className) {
+                    case "conan":
+                        resultTitle = "코난"
+                        resultExplain = "혹시 당신은 명탐정?"
+                        
+                        break;
+                    case "naruto":
+                        resultTitle = "나루토"
+                        resultExplain = "뒤에 숨기고 다니는 꼬리 9개가 있는건 아닌지 확인을.."
+                        
+                        break;
+                    case "ichigo":
+                        resultTitle = "이치고"
+                        resultExplain = "지금 주변을 돌아보세요. 주변에 귀신이 보이지 않나요?"
+                        
+                        break;
+                    case "chopa":
+                        resultTitle = "쵸파"
+                        resultExplain = "귀엽고 귀여운 쵸파. 뼛 속까지 귀여운 당신"
+                        
+                        break;
+                    case "sinobu":
+                        resultTitle = "시노부"
+                        resultExplain = "나비저택에 거주하며 아름다운 미모 뒤에 숨겨진 독술의 달인. 혹시 당신도 독술의 재능이 있지는 않을지.."
+                        
+                        break;
+                        case "kageyama":
+                        resultTitle = "카게야마"
+                        resultExplain ="천재세터 카게야마"
+                        break;
+                        case "tanjiro":
+                        resultTitle = "탄지로"
+                        resultExplain ="오니화가 된 여동생을 지키며 다시 사람으로 만들기 위해 고군분투하는 찐오빠"
+                        break;
+                        case "nezuko":
+                        resultTitle = "네즈코"
+                        resultExplain ="오니화가 되어서도 오빠를 믿고 따르며 지켜주는 여동생"
+                        break;
+                        case "ppororo":
+                        resultTitle = "뽀로로"
+                        resultExplain ="어린이들이여 나를 따르라"
+                        break;
+                        case "hinata":
+                        resultTitle = "히나타"
+                        resultExplain ="당신도 높은 점프력을 가지고 있나요?"
+                        break;
+                        case "roopy":
+                        resultTitle = "루피"
+                        resultExplain ="지금 당장 팔과 다리를 늘려보세요!! 늘어날거에요!! 그리고 해적왕이 되어보자구요!!"
+                        break;
+                        case "mettel":
+                        resultTitle = "메텔"
+                        resultExplain ="별에서 온 그대, 혹시 검정코트를 좋아하지 않으세요?"
+                        break;
+                        case "hani":
+                        resultTitle = "하니"
+                        resultExplain ="체육대회때마다 마지막 계주 선수로 나가시는건 아닌가요?"
+                        break;
+                        case "koeunae":
+                        resultTitle = "고은애"
+                        resultExplain ="두깨씨~~ 홍두깨만 바라보는 해바라기 고은애. 당시의 짝사랑도 성공하시길 바랍니다."
+                        break;
+                        case "hongdooggae":
+                        resultTitle = "홍두깨"
+                        resultExplain ="빛나리중학교 1학년 3반 담임 홍두깨. 하니의 재능을 알아보고 육상선수로 키운 선생님. 당신도 누군가의 재능을 알아보는 눈을 가지고 있진 않나요?"
+                        break;
+                        case "cheol2":
+                        resultTitle = "철이"
+                        resultExplain ="영원한 생명을 동경하여 기계인간이 되기 위해서 메텔과 함께 999호를 타고 여행하는 지구 출신의 소년. 당신도 영원한 생명을 동경하며 기계인간이 되려 하시는건 아닌가요?"
+                        break;
+                        case "moon":
+                        resultTitle = "세일러문_세라"
+                        resultExplain ="정의의 이름으로 널 용서하지 않겠다! 평범한 여중생으로 착하고 명랑하지만 공부는 젬병이다......?!"
+                        break;
+                        case "baekho":
+                        resultTitle = "강백호"
+                        resultExplain ="무시무시한 피지컬과 운동능력을 바탕으로 진짜 잘 싸운다. 게다가 끈기나 체력 같은 부가 조건들도 뛰어나다. 그리고 작중 초반부터 무려 50회나 퇴짜를 맞은 전무후무한 기록을 달성했다. 당신..힘내요..생길거에요"
+                        break;
+                        case "chisu":
+                        resultTitle = "채치수"
+                        resultExplain ="파리채 블로킹! 고릴라 덩크! 그리고 엄근진의 대표 캐릭터이다."
+                        break;
+                        case "woong":
+                        resultTitle = "서태웅"
+                        resultExplain ="냉정하고 과묵하며 잠자기가 취미인데 농구 하나만큼은 천재소리를 들을 만큼 실력이 뛰어나다. 저도 잠자기 참잘하는데요.."
+                        break;
+                        case "yeon":
+                        resultTitle = "채소연"
+                        resultExplain ="러브 코미디물의 주인공들이 흔히들 보유하고 있는 둔감 + 소심 스킬의 소유자. 당신도 주변에서 둔하다는 얘기를 자주 듣지는 않나요?"
+                        break;
+                        case "daeman":
+                        resultTitle = "정대만"
+                        resultExplain ="자네 방황하지 말고 농구선수 해 볼 생각 없는가"
+                        break;
+                    default:
+                        resultTitle = ""
+                        break;
+                        }
+            
+            
+            
+            
+               var title = "<div class='" + prediction[0].className + "-character-title'>" + resultTitle + "</div>"
+            var explain = "<div class='character-explain pt-2'>" + resultExplain + "</div>"
+            var celeb = "<div class='" + prediction[0].className + "-character-celeb pt-2 pb-2'>" + resultCeleb + "</div>"
+            $('.result-message').html(title + explain);
+            
+            
+            
+            
+            
+            
+            var barWidth;
+            for (let i = 0; i < maxPredictions; i++) {
+                if (prediction[i].probability.toFixed(2) > 0.1) {
+                    barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
+                } 
+                
+                else if (prediction[i].probability.toFixed(2) >= 0.01) {
+                    barWidth = "4%"
+                } 
+                
+                else {
+                    barWidth = "2%"
+                }
+                
+                var labelTitle;
+                
+                
+                switch (prediction[i].className) {
+                    case "conan":
+                        labelTitle = "코난"
+                        break;
+                    case "naruto":
+                        labelTitle = "나루토"
+                         break;
+                    case "ichigo":
+                        labelTitle = "이치고"
+                        break;
+                    case "chopa":
+                        labelTitle = "쵸파"
+                         break;
+                    case "sinobu":
+                        labelTitle = "시노부"
+                         break;
+                        case "kageyama":
+                        labelTitle = "카게야마"
+                      
+                        break;
+                        case "tanjiro":
+                        labelTitle = "탄지로"
+                        break;
+                        case "nezuko":
+                        labelTitle = "네즈코"
+                        break;
+                        case "ppororo":
+                        labelTitle = "뽀로로"
+                        break;
+                        case "hinata":
+                        labelTitle = "히나타"
+                        break;
+                        case "roopy":
+                        labelTitle = "루피"
+                        break;
+                        case "mettel":
+                        labelTitle = "메텔"
+                        break;
+                        case "hani":
+                        labelTitle = "하니"
+                        break;
+                        case "koeunae":
+                        labelTitle = "고은애"
+                        break;
+                        case "hongdooggae":
+                        labelTitle = "홍두깨"
+                        break;
+                        case "cheol2":
+                        labelTitle = "철이"
+                        break;
+                        case "moon":
+                        labelTitle = "세일러문"
+                        break;
+                        case "baekho":
+                        labelTitle = "강백호"
+                        break;
+                        case "chisu":
+                        labelTitle = "채치수"
+                        break;
+                        case "woong":
+                        labelTitle = "서태웅"
+                        break;
+                        case "yeon":
+                        labelTitle = "채소연"
+                        break;
+                        case "daeman":
+                        labelTitle = "정대만"
+                        break;
+                    default:
+                        labelTitle = ""
+                        break;
+                        
+                }
+                
+                
+                
+                var label = "<div class='character-label d-flex align-items-center'>" + labelTitle + "</div>"
+                var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
+                labelContainer.childNodes[i].innerHTML = label + bar;
+            }
+        }
+    </script>
+    
+    
+    
+    <script>
+        function iosApp() {
+            document.getElementById("coupang").style.display="none";
+            $("#coupang ins").hide();
+            document.getElementById("addThis").style.display="none";
+            document.getElementById("disqus_thread").style.display="none";
+            var kakao = document.getElementsByClassName("kakao_ad_area");
+            for (var i = 0; i < kakao.length; i++) {
+              if(kakao[i]) {
+                  kakao[i].style.display="none";
+              }
+            }
+            document.getElementById("yotube-top-link").style.display="none";
+            document.getElementById("yotube-mid-link").style.display="none";
+            document.getElementById("yotube-bottom-link").style.display="none";
+        }
+    </script>
+</body>
+<!-- 
+image input box
+Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+gender toggle
+Copyright (c) 2020 by Mert Cukuren (https://codepen.io/knyttneve/pen/bPpEZY)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ -->
+
+</html>
