@@ -3,12 +3,12 @@
 
 <head>
     
-    <meta name="naver-site-verification" content="4af2a9190dff7b787bd0d52b636f19cb98a3f88a" />
-    
     
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-604869546745f5f0"></script>
 
+    
+    <meta name="naver-site-verification" content="4af2a9190dff7b787bd0d52b636f19cb98a3f88a" />
     
    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -93,9 +93,17 @@
     </div>
     
     
+    <ins class="kakao_ad_area" style="display:none;" 
+ data-ad-unit    = "DAN-a7dcRGxnP9bBkGpH" 
+ data-ad-width   = "320" 
+ data-ad-height  = "100"></ins> 
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+    
+    
     <footer class="footer pt-5 container d-flex justify-content-center">
-        <div>
+        <div>                        
             <p><a href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg">제작 도움: 조코딩 유튜브 채널 </a></p>
+            
         </div>
     </footer>
     
@@ -172,7 +180,7 @@
     
     
     <script type="text/javascript">
-        const URL = "https://teachablemachine.withgoogle.com/models/gBLpqhGZR/";
+        const URL = "https://teachablemachine.withgoogle.com/models/ISdVbm-MQ/";
        
         let model, webcam, labelContainer, maxPredictions;
         async function init() {
@@ -296,6 +304,12 @@
                         resultTitle = "정대만"
                         resultExplain ="자네 방황하지 말고 농구선수 해 볼 생각 없는가"
                         break;
+                        
+                        case "hanna":
+                        resultTitle = "이한나"
+                        resultExplain ="매사에 활기차고 분위기메이커같은 존재"
+                        break;
+                        
                     default:
                         resultTitle = ""
                         break;
@@ -398,6 +412,9 @@
                         break;
                         case "daeman":
                         labelTitle = "정대만"
+                        break;
+                        case "hanna":
+                        labelTitle = "이한나"
                         break;
                     default:
                         labelTitle = ""
