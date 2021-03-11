@@ -302,6 +302,28 @@ body {
   border-radius: 10px;
   background-color: rgba(49, 132, 155, 1);
 }
+
+
+.hanna-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(49, 132, 155, 0.2);
+}
+.hanna-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgba(49, 132, 155, 1);
+}
+
+
+
 .tanjiro-box {
   position: absolute;
   top: 0;
@@ -742,5 +764,20 @@ input:checked + label > .knob > i:before {
 
 .ad-banner {
     width: 320px;
+    margin: 0 auto;
+}
+
+.ad-banner2 {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.ad-banner3 {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.ad-banner4 {
+    width: 300px;
     margin: 0 auto;
 }
