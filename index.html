@@ -1,624 +1,392 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
+    <head></head>
+    <body>
+<!-- 상품상세 -->
+<div id="prdDetail" class="ec-base-tab grid4 typeLight">
+		<div id="product_detail_tab_wrap">
+			<ul class="menu" id="product_detail_tab">
+<li class="selected"><a href="#prdDetail">상품상세</a></li>
+            <li><a href="#prdInfo">교환 및 반품</a></li>
+            <li><a href="#prdReview">제품후기(<span class="xans-element- xans-product xans-product-additional snap_review_count noset ">18</span>
+)</a></li>
+            <li><a href="#prdQnA">상품Q&amp;A</a></li>
+        </ul>
+</div>
 
-<head>
-    
-    
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-604869546745f5f0"></script>
-
-    <meta name="google-site-verification" content="_TxY0x8CQktVhntjJNLAv6AEXHxdXFmXsZQ5lq59qFI" />
-    <meta name="naver-site-verification" content="4af2a9190dff7b787bd0d52b636f19cb98a3f88a" />
-    
-   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-    
-    
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>AI 캐릭터상 테스트</title>
-    <meta name="title" content="AI 캐릭터상 테스트">
-    <meta name="subject" content="인공지능이 찾아주는 나와 닮은 캐릭터를 찾아보세요!">
-    <meta name="keywords" content="내가 해적왕이 될 상인가, 캐릭터상 테스트, 캐릭터상 테스트, 인공지능 캐릭터상 테스트, 얼굴상, 캐릭터상 테스트, 나와 닮은 캐릭터, 캐릭터상 찾기, 얼굴로 보는 캐릭터상, 얼굴 캐릭터, 캐릭터얼굴, 캐릭터얼굴, 인공지능 캐릭터상, 인공지능 캐릭터상, AI 얼굴상, AI 캐릭터상, AI 캐릭터상">
-    <meta name="author" content="뽀이">
-    <link rel="stylesheet" href="style.css">
-    <link rel="canonical" href="http://characterface.ml/" />
-    <meta property="og:url" content="http://characterface.ml/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="캐릭터상 테스트" />
-    <meta property="og:description" content="여러 캐릭터 사진 데이터로 학습한 인공지능이 나의 얼굴로 캐릭터얼굴을 찾습니다. 회원가입없이 바로 확인하세요! 사진 데이터는 어디에도 사용되지 않습니다. 캐릭터상 테스트를 통해 나와 닮은 캐릭터를 찾아시길 바랍니다."
-    />
-    <meta property="og:image" content="https://github.com/ppo-oi/characterface/blob/master/graphic_image.png?raw=true" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e64b3727e862b06"></script>
-    
-    
-    
-    
-    
-    
-    
-    
-    <script data-ad-client="ca-pub-6600478954137725" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</head>
-
-<body>  
-    
-    
-  
-     <nav class="p-3 container navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="http://characterface.ml/">내가 해적왕이 될 상인가</a>
-    </nav>
-    
-        
-    <section class="section">
-        <h1 class="title">AI 캐릭터상 테스트</h1>
-        <h2 class="subtitle">나는 과연 해적왕이 될 상인가?!</h2>
-        <h2 class="sr-only">나는 과연 해적왕이 될 상인가?!</h2>
-        <h3 class="sr-only">유명한 캐릭터 사진 데이터로 학습한 AI를 통해 캐릭터상을 찾아드려요.</h3>
-        <h4 class="sr-only">본 서비스는 Google의 AI teachable machine을 활용하였습니다.</h4>
-        
-    </section>
-    
-    
-    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <div class="mt-3 container file-upload">
-        <div class="image-upload-wrap">
-            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
-            <div class="drag-text">
-               
-                <h3 class="mb-5 pt-5  upload-text">얼굴 사진을 올려놓거나 눌러서 업로드하세요!</h3>
+        <div class="cont">
+            <div class="common-banner" style="text-align: center;font-size: 0;">
+                <!--<img src="/web/upload/images/detail_common_bn.jpg" alt="" width="750" height="auto"/>
+                &nbsp;<img src="/web/upload/images/detail_banner.jpg?ver=1005" alt="" width="750" height="auto"/>-->
             </div>
-        </div>
-        <div class="file-upload-content">
-            <img class="file-upload-image" id="face-image" src="#" alt="your image" />
-            <div id="loading" class="animated bounce">
-                <div class="spinner-border" role="status">
-                    <span class="sr-only">Loading...</span>
+
+
+            <!-- 상세페이지 이벤트 배너 -->
+            <style type="text/css">
+            .thx_giv_event {margin: 0 auto; width: 750px;  padding:0;}
+            .thx_giv_event img {max-width:100%;}
+            .thx_giv_event a.link {font-size: 0;}
+            </style>
+<!-- 상품 번호 식별 배너 --><div class="thx_giv_event">
+                <div id="dtPrdnoBan" df-banner-code="detail-ban-pc-mo" hidden>
+                    <div df-banner-clone data-title="{#title}" class="prdBan"><a href="%7B#href%7D" target="{#target}" class="link">{#item}</a></div>
                 </div>
-                <p class="text-center">당신의 캐릭터상을 분석중입니다.</p>
             </div>
-            <p class="result-message"></p>
-            <div id="label-container" class="d-flex flex-column justify-content-around"></div>
-            
-            
-                <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                <div class="addthis_inline_share_toolbox_jsfm"></div>
-            
-            
-            <div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
 
-            <div class="pt-3 image-title-wrap">
-                <button type="button p-2" class="try-again-btn" onclick="window.location.reload();">
-                    <span class="try-again-text">다른 사진으로 재시도</span>
-                </button>
+            <script>
+            let vRand=Math.random();
+            document.write('<scr' + 'ipt src="/web/upload/dfloor_apps/banner/yuMCJvdqf74p6zhQv321p5Kr.js?v=1'+vRand+'"></scr' + 'ipt>');
+            </script>
+
+			<script type="text/javascript">
+			var prdNo = '1139';
+			var showPrdno = new Array();
+			$("#dtPrdnoBan .prdBan").each(function() {
+				var dtitle = $(this).attr('data-title');
+                // console.log(dtitle);
+				var showPrdno = dtitle.split(',');
+                if (showPrdno.indexOf('except') != -1) {
+                    if (showPrdno.indexOf(prdNo) != -1) {
+                        $(this).remove();
+                    }
+                } else {
+                    if (showPrdno.indexOf(prdNo) == -1 && showPrdno.indexOf('all') == -1) {
+                        $(this).hide();
+                    }
+                }
+			});
+			</script>
+
+
+
+
+
+
+
+
+			<style type="text/css">
+			.detailEditor {max-width:750px; margin: 0 auto;}
+			.detailEditor img {max-width:100%;}
+			</style>
+<!-- /product/detail.html 안에 넣는 부분 -->
+			
+			<div class="detailEditor">
+            <div style="text-align: center;">
+
+<!--옵션배너-->
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211022_option_bn.jpg"></p>
+
+<!--상세페이지-->
+
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211015_hero_01_02.jpg"></p>
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211018_hero_01_03.jpg?ver=211018"></p>
+
+<div style="padding:54.17% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/635900382?h=efc3866442&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;background=1&amp;muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe></div>
+
+<!--<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211015_hero_01_04.gif"></p>-->
+
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211015_hero_01_05.jpg"></p>
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211018_hero_01_06.jpg"></p>
+
+<div style="padding:102.59% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/635900479?h=4b4b639152&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;background=1&amp;muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe></div>
+
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211015_hero_01_08.jpg"></p>
+
+<!--잠시OFF<div style="padding:69.14% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/635900568?h=6399a6a0ed&autoplay=1&loop=1&title=0&byline=0&portrait=0&background=1&muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe></div>
+
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211015_hero_01_10.jpg"></p>-->
+
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211015_hero_01_11.gif"></p>
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211015_hero_01_12.jpg"></p>
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211015_hero_01_13.jpg?ver=211015"></p>
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211015_hero_01_14.jpg"></p>
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211015_hero_01_15.jpg"></p>
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211018_hero_01_17.jpg"></p>
+
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211015_hero_02_01.jpg"></p>
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211015_hero_02_02.jpg"></p>
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211015_hero_02_03.gif"></p>
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211018_hero_02_04.jpg"></p>
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211015_hero_02_05.jpg"></p>
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211015_hero_02_06.jpg"></p>
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211018_hero_02_007.jpg"></p>
+
+<div style="padding:49.48% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/635900677?h=93eb928241&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;background=1&amp;muted=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe></div>
+
+<!--<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211015_hero_02_08.gif"></p>-->
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211015_hero_02_09.jpg"></p>
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211015_hero_02_10.jpg"></p>
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211015_hero_02_11.jpg"></p>
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211015_hero_02_12.jpg"></p>
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211015_hero_02_13.jpg"></p>
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211015_hero_02_14.jpg"></p>
+<p><img alt="" ec-data-src="/web/product/detail/cushion/hero/211015_hero_02_15.jpg"></p>
+
+<p><br></p><p><br></p><p><br></p>
+
+
+</div>			</div>
+
+    <!--
+    상품번호:  1134 상품을 위한 코드 추가
+    -->
+    <!--
+    @import(/product/detail_prd_1134.html)
+    -->
+
+
+
+
+
+			<style type="text/css">
+			/* 서비스 문의 html 입력 추가 */
+			.addService { padding:0; max-width:750px; margin: 0 auto; }
+			.deToggle {padding: 0; letter-spacing:-0.4px; }
+			.deToggle .deTitle {color: #222222; font-weight: bold; padding: 19px 0; border-top: 1px solid #222222; position: relative; font-size: 16px; cursor: pointer;}
+			.deToggle .deTitle:after {content:"\e941"; font-family: "xeicon"; position: absolute; width: 20px; right:0; top:19px; text-align: center;
+				transform: rotate(0deg); transition: transform 120ms 200ms ease-out;
+			}
+			.deToggle .deTitle.on:after { transform: rotate(-180deg); transition: transform 120ms 200ms ease-out;}
+
+			.deToggle .deContent {display: none; padding: 10px 0 40px 0; font-size: 13.6px;}
+			.deToggle ul.disc {margin:0 0; list-style:disc; padding-left:15px;}
+			.deToggle ul.disc li  {list-style:disc; line-height:1.5;}
+
+			.deToggle ul.dePrdInfo {}
+			.deToggle ul.dePrdInfo li {line-height: 1.2; margin: 0 0 14px; padding: 0 0 0 160px;}
+			.deToggle ul.dePrdInfo li span {display:block; width:160px; float: left; margin-left: -160px; font-weight: bold; letter-spacing: -0.5px;}
+
+			.deToggle a.cpop {display: inline-block; border-bottom: 1px solid #000; cursor: pointer; padding: 0 0 3px 0;}
+
+			.dePop_layer {display:none; letter-spacing: -1px;}
+			.dePop_layer .bgshadow {content:""; width: 100%; height: 100%; position: fixed; left: 0; top:0; display: block; background:rgba(0,0,0,.8); z-index:1001;}
+			.dePop_layer .dePop { text-align: left; width: 450px; left: 50%; top:50%; margin-left: -225px; margin-top: -250px; position:fixed; background: #fff;   overflow-y:auto; max-height:calc(100% - 40px); z-index: 1002;}
+
+			.dePop_layer .dePop .pp_header {padding:40px 20px 0; margin: 0 0 15px 0; position: relative;  color: #000; font-size: 20px;}
+			.dePop_layer .dePop .pp_header p.close {width: 24px; height: 24px; font-size: 20px; color: #000; position: absolute; right:13px; top:50%; margin-top: -10px; cursor: pointer;}
+
+			.dePop_layer .dePop .depContent {padding:20px 20px; background: #fff; overflow-y:auto; max-height:450px; line-height: 20px; font-size: 13.6px;}
+			.dePop_layer .dePop .depContent ol {padding-left: 10px; }
+			.dePop_layer .dePop .depContent ol li {margin: 0 0 10px 0; list-style: decimal;}
+
+			</style>
+<!-- 서비스 문의 내용을 추가 정보로 사용 --><div class="addService">
+			<div class="deToggle">
+	<div class="deTitle">상품 정보 제공 고시</div>
+	<div class="deContent">
+		<ul class="dePrdInfo">
+			<li><span>품명 및 모델명</span>에이프릴스킨 히어로 쿠션<br>APRILSKIN HERO CUSHION</li>
+			<li><span>용량</span>본품: 12 g, 리필: 12 g</li>
+			<li><span>제품 주요사양</span>모든피부</li>
+			<li><span>사용기한</span>제품 내 별도표기</li>
+			<li><span>개봉 후 사용기간</span>제품 내 별도표기</li>
+			<li><span>사용방법</span>내용물을 퍼프에 취해 피부 결을 따라 톡톡 두드리듯 밀착시켜 줍니다.</li>
+			<li><span>화장품제조업자</span>제품 내 별도표기</li>
+			<li><span>화장품책임판매업자</span>주식회사 에이피알</li>
+			<li><span>제조국</span>대한민국</li>
+			<li><span>식품의약품 안전처 심사 필 유무</span>무</li>
+			<li><span>기능성화장품 심사필 유무</span>자외선차단 미백 주름개선 3중 기능성</li>
+
+			<li><span>주요성분</span><a class="cpop" id="cpop1">전성분 보기</a></li>
+			<li><span>사용할 때 주의사항</span><a class="cpop" id="cpop2">주의사항 보기</a></li>
+		</ul>
+	</div><!-- .deContent -->
+</div>
+
+<div class="dePop_layer" id="cpopBody1">
+	<div class="dePop">
+		<div class="pp_header">
+			전성분 보기
+			<p class="close dePopClose"><em class="xi xi-close"></em></p>
+		</div>
+
+		<div class="depContent">
+		<ol>21호 : 미네랄워터, 티타늄디옥사이드, 에칠헥실메톡시신나메이트, 사이클로펜타실록세인, 부틸옥틸살리실레이트, 에칠헥실살리실레이트, 사이클로헥사실록세인, 메틸트라이메티콘, 부틸렌글라이콜, 나이아신아마이드, 옥토크릴렌, 징크옥사이드, 피이지-30다이폴리하이드록시스테아레이트, 비닐다이메티콘/메티콘실세스퀴옥세인크로스폴리머, 트라이메틸실록시실리케이트, 피이지-10다이메티콘, 다이스테아다이모늄헥토라이트, 마그네슘설페이트, 메틸메타크릴레이트크로스폴리머, 정제수, 아크릴레이트/스테아릴아크릴레이트/다이메티콘메타크릴레이트코폴리머, 카프릴릭/카프릭글리세라이즈, 피브이피,트라이에톡시카프릴릴실레인, 알루미늄하이드록사이드, 페녹시에탄올, 향료, 아데노신, 알로에베라잎추출물,자일리틸글루코사이드, 안하이드로자일리톨, 자일리톨,티트리잎추출물, 1,2-헥산다이올, 글루코오스, 하이드롤라이즈드하이알루로닉애씨드, 병풀추출물, 소듐하이알루로네이트, 카프릴릴글라이콜, 에틸헥실글리세린, 황색산화철, 적색산화철, 흑색산화철</ol>
+		<ol>22호 : 정제수, 사이클로펜타실록세인, 티타늄디옥사이드, 에칠헥실메톡시신나메이트, 다이프로필렌글라이콜, 메틸트라이메티콘, 징크옥사이드, 메틸메타크릴레이트크로스폴리머, 부틸렌글라이콜, 라우릴피이지-8다이메티콘, 페닐벤즈이미다졸설포닉애씨드, 나이아신아마이드, 나일론-12, 트로메타민, 세틸피이지/피피지-10/1다이메티콘, 소듐클로라이드, 프로판다이올, 글리세릴폴리메타크릴레이트, 황색산화철, 솔비탄세스퀴올리에이트, 쇠비름추출물, 판테놀, 다이실록세인, 다이스테아다이모늄헥토라이트, 프로필렌글라이콜, 트라이에톡시카프릴릴실레인, 소듐벤조에이트, 하이드로젠다이메티콘, 합성비즈왁스, 토코페릴아세테이트, 알루미늄하이드록사이드, 적색산화철, 트라이메틸실록시실리케이트/다이메티콘올크로스폴리머, 다이메티콘크로스폴리머, 포타슘솔베이트, 향료, 폴리하이드록시스테아릭애씨드, 흑색산화철, 다이소듐이디티에이, 개똥쑥추출물, 병풀추출물, 아데노신, 에틸헥실팔미테이트, 아이소프로필미리스테이트, 아이소스테아릭애씨드, 레시틴, 프로필렌카보네이트, 폴리글리세릴-3폴리리시놀리에이트, 메틸프로판다이올, 하이알루로닉애씨드, 하이드롤라이즈드하이알루로닉애씨드, 소듐하이알루로네이트, 1,2-헥산다이올, 트라이메틸실록시실리케이트, 에틸헥실글리세린</ol>
+		<ol>23호 : 정제수, 사이클로펜타실록세인, 티타늄디옥사이드, 에칠헥실메톡시신나메이트, 다이프로필렌글라이콜, 메틸트라이메티콘, 징크옥사이드, 메틸메타크릴레이트크로스폴리머, 부틸렌글라이콜, 라우릴피이지-8다이메티콘, 페닐벤즈이미다졸설포닉애씨드, 나이아신아마이드, 나일론-12, 트로메타민, 세틸피이지/피피지-10/1다이메티콘, 소듐클로라이드, 프로판다이올, 글리세릴폴리메타크릴레이트, 황색산화철, 솔비탄세스퀴올리에이트, 쇠비름추출물, 판테놀, 다이실록세인, 다이스테아다이모늄헥토라이트, 프로필렌글라이콜, 트라이에톡시카프릴릴실레인, 소듐벤조에이트, 하이드로젠다이메티콘, 합성비즈왁스, 토코페릴아세테이트, 알루미늄하이드록사이드, 적색산화철, 트라이메틸실록시실리케이트/다이메티콘올크로스폴리머, 다이메티콘크로스폴리머, 포타슘솔베이트, 향료, 흑색산화철, 폴리하이드록시스테아릭애씨드, 다이소듐이디티에이, 개똥쑥추출물, 병풀추출물, 아데노신, 에틸헥실팔미테이트, 아이소프로필미리스테이트, 아이소스테아릭애씨드, 레시틴, 프로필렌카보네이트, 폴리글리세릴-3폴리리시놀리에이트, 메틸프로판다이올, 하이알루로닉애씨드, 하이드롤라이즈드하이알루로닉애씨드, 소듐하이알루로네이트, 1,2-헥산다이올, 트라이메틸실록시실리케이트, 에틸헥실글리세린</ol>
+		</div>
+	</div><!-- .dePop -->
+	<div class="bgshadow"></div>
+</div>
+
+
+<div class="dePop_layer" id="cpopBody2">
+	<div class="dePop">
+		<div class="pp_header">
+			주의사항 보기
+			<p class="close dePopClose"><em class="xi xi-close"></em></p>
+		</div>
+		<div class="depContent">
+			<ol>
+				<li>화장품 사용 시 또는 사용 후 직사광선에 의하여 사용부위가 붉은 반점, 부어오름 또는 가려움증 등의 이상 증상이나 부작용이 있는 경우 전문의 등과 상담할 것</li>
+				<li>상처가 있는 부위 등에는 사용을 자제할 것</li>
+				<li>
+				보관 및 취급 시의 주의사항<br>
+				1) 어린이의 손이 닿지 않는 곳에 보관할 것<br>
+				2) 직사광선을 피해서 보관할 것<br>
+				* 사용 전에 반드시 사용법 및 사용 시의 주의사항을 숙지하신 후 사용하십시오.</li>
+			</ol>
+		</div>
+	</div><!-- .dePop -->
+	<div class="bgshadow"></div>
+</div>
+
+
+<div class="deToggle">	
+	<div class="deTitle">
+	배송/교환/반품 안내
+	</div>
+
+	<div class="deContent">
+		<ul class="dePrdInfo">
+			<li><span>환불보증기준</span>수령일로부터 3일 이내에 개봉하지 않은 새 제품 (개봉흔적X)일 경우에 가능합니다.</li>
+			<li><span>품질보증기준</span>본 상품에 이상이 있을경우 공정거래위원회 고시 소비자 분쟁 해결 기준에 의해 보상. </li>
+			<li><span>소비자상담관련 전화번호</span>소비자 상담실 : <a href="tel:1234-1234">1234-1234</a></li>
+			<li><span>예상배송기간</span>택배내용</li>
+		</ul>
+	</div><!-- .deContent -->
+</div>			</div>
+
+			<script type="text/javascript">
+			$(document).ready(function(){
+				$(".deToggle .deTitle").click(function(){
+					$(this).parent().children(".deContent").slideToggle("fast");
+					$(this).toggleClass('on');
+				});
+
+				$('[id^=cpop]').click(function(){
+					var num = this.id.split('cpop')[1];
+					$('#cpopBody'+ num).show();
+				});
+				$('.dePopClose, .dePop_layer .bgshadow').click(function(){ 		$('.dePop_layer').hide();	});
+			});
+			</script>
+
+
+        </div>
+
+    </div>
+<!-- //상품상세 -->
+<!-- 교환 및 반품 -->
+<div id="prdInfo" class="ec-base-tab grid4">
+        <ul class="menu">
+<li><a href="#prdDetail">상품상세</a></li>
+            <li class="selected"><a href="#prdInfo">교환 및 반품</a></li>
+            <li><a href="#prdReview">제품후기</a></li>
+            <li><a href="#prdQnA">상품Q&amp;A</a></li>
+        </ul>
+<div class="cont">
+            <h3>상품결제정보</h3>
+            고액결제의 경우 안전을 위해 카드사에서 확인전화를 드릴 수도 있습니다. 확인과정에서 도난 카드의 사용이나 타인 명의의 주문등
+      정상적인 주문이 아니라고 판단될 경우 임의로 주문을 보류 또는 취소할 수 있습니다. &nbsp; <br>
+      <br>
+      무통장 입금은 상품 구매 대금은 PC뱅킹, 인터넷뱅킹, 텔레뱅킹 혹은 가까운 은행에서 직접 입금하시면 됩니다. &nbsp;<br>
+      주문시 입력한&nbsp;입금자명과 실제입금자의 성명이 반드시 일치하여야 하며, 7일 이내로 입금을 하셔야 하며&nbsp;입금되지
+      않은 주문은 자동취소 됩니다. <br>
+        </div>
+        <div class="cont">
+            <h3>배송정보</h3>
+            <ul class="delivery">
+<li>배송 방법 : 택배</li>
+                <li>배송 지역 : 지역지역</li>
+                <li>배송 비용 : 0,000원</li>
+                <li>배송 기간 : 2-4일</li>
+                <li>배송 안내 : <span style="font-family: Verdana;"><span style="font-size: 9pt;"></span></span><div style="box-sizing: border-box; font-family: "Segoe UI", system-ui, "Apple Color Emoji", "Segoe UI Emoji", sans-serif; font-size: 14px;"><div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;"><span style="font-family: Verdana;"><span style="font-size: 9pt;">배송시 제주도 및 도서산간 지역으로의 배송인 경우 [4000원의 배송비가 추가됩니다.]</span></span></span></span></div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;"><span style="font-family: Verdana;"><span style="font-size: 9pt;">
+
+</span></span></span></span><div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;"><span style="font-family: Verdana;"><span style="font-size: 9pt;">
+</span></span></span></span><div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;"><span style="font-family: Verdana;"><span style="font-size: 9pt;"> </span></span></span></span></div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;"><span style="font-family: Verdana;"><span style="font-size: 9pt;">
+
+</span></span></span></span><div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;"><span style="font-family: Verdana;"><span style="font-size: 9pt;">
+</span></span></span></span><div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;"><span style="font-family: Verdana;"><span style="font-size: 9pt;">배송기간 : 평일기준 오후 4시까지 결제완료 건에 한해 당일 출고됩니다.</span></span></span></span></div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;"><span style="font-family: Verdana;"><span style="font-size: 9pt;">
+
+</span></span></span></span><div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;"><span style="font-family: Verdana;"><span style="font-size: 9pt;">
+</span></span></span></span><div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;"><span style="font-family: Verdana;"><span style="font-size: 9pt;"> </span></span></span></span></div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;"><span style="font-family: Verdana;"><span style="font-size: 9pt;">
+
+</span></span></span></span><div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;"><span style="font-family: Verdana;"><span style="font-size: 9pt;">
+</span></span></span></span><div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;"><span style="font-family: Verdana;"><span style="font-size: 9pt;">당일 오후 4시 이후 주문건은 평일 기준 익일 출고 됩니다.</span></span></span></span></div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;"><span style="font-family: Verdana;"><span style="font-size: 9pt;">
+
+</span></span></span></span><div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;"><span style="font-family: Verdana;"><span style="font-size: 9pt;">
+</span></span></span></span><div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;"><span style="font-family: Verdana;"><span style="font-size: 9pt;"> </span></span></span></span></div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;"><span style="font-family: Verdana;"><span style="font-size: 9pt;">
+
+</span></span></span></span><div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;"><span style="font-family: Verdana;"><span style="font-size: 9pt;">
+</span></span></span></span><div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;"><span style="font-family: Verdana;"><span style="font-size: 9pt;">(단, 주문량 폭주로 출고 지연이 영업일 기준 +1일 발생될 수 있는 점 양해 부탁드립니다.)</span></span></span></span></div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;">
+
+</span></span><div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;">
+</span></span><div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;"> </span></span></div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;">
+
+</span></span><div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;">
+</span></span><div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;">배송일은 일반적으로 1~7일정도 소요되며,</span></span></div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;">
+
+</span></span><div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;">
+</span></span><div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;"> </span></span></div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;">
+
+</span></span><div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;">
+</span></span><div><span style="font-family: 돋움, dotum;"><span style="font-size: 10pt;">제주도 및 도서산간 지역의 경우 배송이 지연될 수 있는 점 양해부탁드립니다.</span></span></div></div></div></div></div></div></div></div></div></div></div></div>																											<style type="text/css"><span style="font-family: Arial;"><span style="font-size: 9pt;"><span style="font-family: 돋움, dotum;"><span style="font-family: 돋움, dotum;">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px '.Apple SD Gothic NeoI'; color: #454545}
+span.s1 {font: 12.0px 'Helvetica Neue'}
+</span></span></span></span></style>			</li>
+            </ul>
+</div>
+        <div class="cont">
+            <h3>교환 및 반품정보</h3>
+            <b>교환 및 반품이 가능한 경우</b><br />- 상품을 공급 받으신 날로부터 3일이내 단, 가전제품의<br />&nbsp; 경우 포장을 개봉하였거나 포장이 훼손되어 상품가치가 상실된 경우에는 교환/반품이 불가능합니다.<br />- 공급받으신 상품 및 용역의 내용이 표시.광고 내용과<br />&nbsp; 다르거나 다르게 이행된 경우에는 공급받은 날로부터 3개월이내, 그사실을 알게 된 날로부터 30일이내<br /><br /><div><b>** 교환 및 반품이 가능한 경우**</b></div><div>- 상품을 인도받은 날로부터 7일 이내에 한해 계약에 관한 청약철회가 가능합니다.</div><div>- 공급받으신 상품 및 용역의 내용이 표시. 광고 내용과 다르거나 다르게 이행된 경우에는 공급받은 날로부터 3월 이내, 그 사실을 알게 된 날로부터 30일 이내</div><div><b><br /></b></div><div><b>** 교환 및 반품이 불가능한 경우**</b></div><div>- 고객님의 책임 있는 사유로 상품 등이 멸실 또는 훼손된 경우. 단, 상품의 내용을 확인하기 위하여 포장 등을 훼손한 경우는 제외</div><div>- 포장을 개봉하였거나 포장이 훼손되어 상품가치가 상실된 경우</div><div>(예:'개봉 시 교환/환불 불가 스티커' 를 훼손한 경우, 제품 단 상자가 훼손되어 상품가치가 상실된 경우)</div><div>- 고객님의 사용 또는 일부 소비에 의하여 상품의 가치가 현저히 감소한 경우 단, 화장품등의 경우 시용제품을 제공한 경우에 한 합니다.</div><div>- 시간의 경과에 의하여 재판매가 곤란할 정도로 상품 등의 가치가 현저히 감소한 경우</div><div>&nbsp; (자세한 내용은 CS센터의 Q&A게시판을 이용해 주시기 바랍니다.)</div><div><br></div><div>※ 단순변심으로 인한 교환, 반품을 하실 경우 상품반송 비용은 고객님께서 부담하셔야 합니다. (색상 및 사이즈 교환 등 포함) </div>        </div>
+
+    </div>
+<!-- //교환 및 반품 -->
+<!-- 제품후기 -->
+<div id="prdReview" class="ec-base-tab grid4">
+        <ul class="menu">
+<li><a href="#prdDetail">상품상세</a></li>
+            <li><a href="#prdInfo">교환 및 반품</a></li>
+            <li class="selected"><a href="#prdReview">제품후기</a></li>
+            <li><a href="#prdQnA">상품Q&amp;A</a></li>
+        </ul>
+<div class="board">
+            <h3 class="snapreview_hidden">제품후기</h3>
+
+
+
+            <style type="text/css">
+            .review_notice {background: #ffffff; padding: 25px 12px;}
+            .review_notice h4 {padding: 0 0 0;  font-size: 18px; cursor: pointer; font-weight: 500;}
+            .review_notice h4 span {display: inline-block; font-size: 15px; height: 14px; width: 14px; line-height: 14px; text-align: center; transition: transform 120ms 60ms ease-out;}
+            .review_notice h4.on span {transform: rotate(180deg); transition: transform 120ms 60ms ease-out;}
+            .review_notice .rn_con {padding-left: 130px; display: none;
+                margin-top: 30px; padding-top: 30px; border-top: 1px solid #dcdcdc;
+            }
+            .review_notice h5.rt {width: 130px; float: left; margin-left: -130px; font-size: 15px; font-weight: 500;}
+            .review_notice ul.rn { vertical-align: top; font-size: 13px;}
+            .review_notice ul.rn li {padding-left: 10px; line-height: 1.4; margin: 0 0 10px 0; position: relative;}
+            .review_notice ul.rn li span.ex {color: #aaaaaa;}
+            .review_notice ul.rn li:before {content:'· '; width: 10px; height: 10px; display: block; position: absolute; left: 0; top: 2px }
+
+            </style>
+<div class="review_notice">
+                <h4 id="rn_button">노출 중단 및 삭제 대상 게시글 기준 <span><i class="xi xi-angle-down"></i></span>
+</h4>
+                <div class="rn_con" id="rn_con">
+                    <h5 class="rt">유의사항</h5>
+                    <ul class="rn">
+<li>노골적인 광고성 홍보 게시글</li>
+                        <li>욕설 및 음란성 불건전 게시글</li>
+                        <li>허위사실 및 검증되지 않은 내용에 관한 게시글</li>
+                        <li>타인의 게시글 또는 저작권이 있는 컨텐츠를 무단으로 직접 게재한 게시글<br/><span class="ex">(ex. 다른 고객님의 리뷰를 그대로 붙여넣기 한 경우 등)</span>
+</li>
+                        <li>같은 내용으로 도배되거나 낚시성 내용을 포함한 게시글</li>
+                        <li>각종 사회적으로 논란의 소지를 만드는 게시글</li>
+                        <li>이미 반품한 상품에 대한 게시글</li>
+                        <li>피부 전/후 사진에 대해 명백히 보정 사실을 확인할 수 있는 게시글</li>
+                    </ul>
+</div>
             </div>
-        </div>
-    </div>
-    
-    
-   
-    
-    
-    <footer class="footer pt-5 container d-flex justify-content-center">
-        <div>                        
-            <p><a href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg">제작 도움: 조코딩 유튜브 채널 </a></p>
-            
-        </div>
-    </footer>
-    
-    
-    
-    <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://ppo-oi.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    
-    
-    
-    
-    
-    <script>
-        function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-                reader.onload = function(e) {
-                    $('.image-upload-wrap').hide();
-                    $('#loading').show();
-                    $('.file-upload-image').attr('src', e.target.result);
-                    $('.file-upload-content').show();
-                    $('.image-title').html(input.files[0].name);
-                };
-                reader.readAsDataURL(input.files[0]);
-                init().then(function() {
-                    console.log("hello");
-                    predict();
-                    $('#loading').hide();
-                });
-            } else {
-                removeUpload();
-            }
-        }
-
-        function removeUpload() {
-            $('.file-upload-input').replaceWith($('.file-upload-input').clone());
-            $('.file-upload-content').hide();
-            $('.image-upload-wrap').show();
-        }
-        $('.image-upload-wrap').bind('dragover', function() {
-            $('.image-upload-wrap').addClass('image-dropping');
-        });
-        $('.image-upload-wrap').bind('dragleave', function() {
-            $('.image-upload-wrap').removeClass('image-dropping');
-        });
-    </script>
-    
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>   
-<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
-    
-    
-
-    
-    
-    
-    
-    <script type="text/javascript">
-        const URL = "https://teachablemachine.withgoogle.com/models/ISdVbm-MQ/";
-       
-        let model, webcam, labelContainer, maxPredictions;
-        async function init() {
-            
-            const modelURL = URL + "model.json";
-            const metadataURL = URL + "metadata.json";
-            model = await tmImage.load(modelURL, metadataURL);
-            maxPredictions = model.getTotalClasses();
-            
-            labelContainer = document.getElementById("label-container");
-            for (let i = 0; i < 5; i++) {
-                var element = document.createElement("div")
-                element.classList.add("d-flex");
-                labelContainer.appendChild(element);
-            }
-        }
-        
-        
-        async function predict() {
-            var image = document.getElementById("face-image")
-            const prediction = await model.predict(image, false);
-            
-            prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
-            
-            
-            console.log(prediction[0].className);
-            
-            var resultTitle, resultExplain, resultCeleb;
-            // if (document.getElementById("gender").checked) {
-                switch (prediction[0].className) {
-                    case "conan":
-                        resultTitle = "코난"
-                        resultExplain = "혹시 당신은 명탐정?"
-                        
-                        break;
-                    case "naruto":
-                        resultTitle = "나루토"
-                        resultExplain = "뒤에 숨기고 다니는 꼬리 9개가 있는건 아닌지 확인을.."
-                        
-                        break;
-                    case "ichigo":
-                        resultTitle = "이치고"
-                        resultExplain = "지금 주변을 돌아보세요. 주변에 귀신이 보이지 않나요?"
-                        
-                        break;
-                    case "chopa":
-                        resultTitle = "쵸파"
-                        resultExplain = "귀엽고 귀여운 쵸파. 뼛 속까지 귀여운 당신"
-                        
-                        break;
-                    case "sinobu":
-                        resultTitle = "시노부"
-                        resultExplain = "나비저택에 거주하며 아름다운 미모 뒤에 숨겨진 독술의 달인. 혹시 당신도 독술의 재능이 있지는 않을지.."
-                        
-                        break;
-                        case "kageyama":
-                        resultTitle = "카게야마"
-                        resultExplain ="천재세터 카게야마"
-                        break;
-                        case "tanjiro":
-                        resultTitle = "탄지로"
-                        resultExplain ="오니화가 된 여동생을 지키며 다시 사람으로 만들기 위해 고군분투하는 찐오빠"
-                        break;
-                        case "nezuko":
-                        resultTitle = "네즈코"
-                        resultExplain ="오니화가 되어서도 오빠를 믿고 따르며 지켜주는 여동생"
-                        break;
-                        case "ppororo":
-                        resultTitle = "뽀로로"
-                        resultExplain ="어린이들이여 나를 따르라"
-                        break;
-                        case "hinata":
-                        resultTitle = "히나타"
-                        resultExplain ="당신도 높은 점프력을 가지고 있나요?"
-                        break;
-                        case "roopy":
-                        resultTitle = "루피"
-                        resultExplain ="지금 당장 팔과 다리를 늘려보세요!! 늘어날거에요!! 그리고 해적왕이 되어보자구요!!"
-                        break;
-                        case "mettel":
-                        resultTitle = "메텔"
-                        resultExplain ="별에서 온 그대, 혹시 검정코트를 좋아하지 않으세요?"
-                        break;
-                        case "hani":
-                        resultTitle = "하니"
-                        resultExplain ="체육대회때마다 마지막 계주 선수로 나가시는건 아닌가요?"
-                        break;
-                        case "koeunae":
-                        resultTitle = "고은애"
-                        resultExplain ="두깨씨~~ 홍두깨만 바라보는 해바라기 고은애. 당시의 짝사랑도 성공하시길 바랍니다."
-                        break;
-                        case "hongdooggae":
-                        resultTitle = "홍두깨"
-                        resultExplain ="빛나리중학교 1학년 3반 담임 홍두깨. 하니의 재능을 알아보고 육상선수로 키운 선생님. 당신도 누군가의 재능을 알아보는 눈을 가지고 있진 않나요?"
-                        break;
-                        case "cheol2":
-                        resultTitle = "철이"
-                        resultExplain ="영원한 생명을 동경하여 기계인간이 되기 위해서 메텔과 함께 999호를 타고 여행하는 지구 출신의 소년. 당신도 영원한 생명을 동경하며 기계인간이 되려 하시는건 아닌가요?"
-                        break;
-                        case "moon":
-                        resultTitle = "세일러문_세라"
-                        resultExplain ="정의의 이름으로 널 용서하지 않겠다! 평범한 여중생으로 착하고 명랑하지만 공부는 젬병이다......?!"
-                        break;
-                        case "baekho":
-                        resultTitle = "강백호"
-                        resultExplain ="무시무시한 피지컬과 운동능력을 바탕으로 진짜 잘 싸운다. 게다가 끈기나 체력 같은 부가 조건들도 뛰어나다. 그리고 작중 초반부터 무려 50회나 퇴짜를 맞은 전무후무한 기록을 달성했다. 당신..힘내요..생길거에요"
-                        break;
-                        case "chisu":
-                        resultTitle = "채치수"
-                        resultExplain ="파리채 블로킹! 고릴라 덩크! 그리고 엄근진의 대표 캐릭터이다."
-                        break;
-                        case "woong":
-                        resultTitle = "서태웅"
-                        resultExplain ="냉정하고 과묵하며 잠자기가 취미인데 농구 하나만큼은 천재소리를 들을 만큼 실력이 뛰어나다. 저도 잠자기 참 잘하는데요.."
-                        break;
-                        case "yeon":
-                        resultTitle = "채소연"
-                        resultExplain ="러브 코미디물의 주인공들이 흔히들 보유하고 있는 둔감 + 소심 스킬의 소유자. 당신도 주변에서 둔하다는 얘기를 자주 듣지는 않나요?"
-                        break;
-                        case "daeman":
-                        resultTitle = "정대만"
-                        resultExplain ="자네 방황하지 말고 농구선수 해 볼 생각 없는가"
-                        break;
-                        
-                        case "hanna":
-                        resultTitle = "이한나"
-                        resultExplain ="매사에 활기차고 분위기메이커같은 존재"
-                        break;
-                        
-                    default:
-                        resultTitle = ""
-                        break;
-                        }
-            
-            
-            
-            
-               var title = "<div class='" + prediction[0].className + "-character-title'>" + resultTitle + "</div>"
-            var explain = "<div class='character-explain pt-2'>" + resultExplain + "</div>"
-            var celeb = "<div class='" + prediction[0].className + "-character-celeb pt-2 pb-2'>" + resultCeleb + "</div>"
-            $('.result-message').html(title + explain);
-            
-            
-            
-            
-            
-            
-            var barWidth;
-            for (let i = 0; i < maxPredictions; i++) {
-                if (prediction[i].probability.toFixed(2) > 0.1) {
-                    barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
-                } 
-                
-                else if (prediction[i].probability.toFixed(2) >= 0.01) {
-                    barWidth = "4%"
-                } 
-                
-                else {
-                    barWidth = "2%"
-                }
-                
-                var labelTitle;
-                
-                
-                switch (prediction[i].className) {
-                    case "conan":
-                        labelTitle = "코난"
-                        break;
-                    case "naruto":
-                        labelTitle = "나루토"
-                         break;
-                    case "ichigo":
-                        labelTitle = "이치고"
-                        break;
-                    case "chopa":
-                        labelTitle = "쵸파"
-                         break;
-                    case "sinobu":
-                        labelTitle = "시노부"
-                         break;
-                        case "kageyama":
-                        labelTitle = "카게야마"
-                      
-                        break;
-                        case "tanjiro":
-                        labelTitle = "탄지로"
-                        break;
-                        case "nezuko":
-                        labelTitle = "네즈코"
-                        break;
-                        case "ppororo":
-                        labelTitle = "뽀로로"
-                        break;
-                        case "hinata":
-                        labelTitle = "히나타"
-                        break;
-                        case "roopy":
-                        labelTitle = "루피"
-                        break;
-                        case "mettel":
-                        labelTitle = "메텔"
-                        break;
-                        case "hani":
-                        labelTitle = "하니"
-                        break;
-                        case "koeunae":
-                        labelTitle = "고은애"
-                        break;
-                        case "hongdooggae":
-                        labelTitle = "홍두깨"
-                        break;
-                        case "cheol2":
-                        labelTitle = "철이"
-                        break;
-                        case "moon":
-                        labelTitle = "세일러문"
-                        break;
-                        case "baekho":
-                        labelTitle = "강백호"
-                        break;
-                        case "chisu":
-                        labelTitle = "채치수"
-                        break;
-                        case "woong":
-                        labelTitle = "서태웅"
-                        break;
-                        case "yeon":
-                        labelTitle = "채소연"
-                        break;
-                        case "daeman":
-                        labelTitle = "정대만"
-                        break;
-                        case "hanna":
-                        labelTitle = "이한나"
-                        break;
-                    default:
-                        labelTitle = ""
-                        break;
-                        
-                }
-                
-                
-                
-                var label = "<div class='character-label d-flex align-items-center'>" + labelTitle + "</div>"
-                var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
-                labelContainer.childNodes[i].innerHTML = label + bar;
-            }
-        }
-    </script>
-    
-    
-    
-    <script>
-        function iosApp() {
-            document.getElementById("coupang").style.display="none";
-            $("#coupang ins").hide();
-            document.getElementById("addThis").style.display="none";
-            document.getElementById("disqus_thread").style.display="none";
-            var kakao = document.getElementsByClassName("kakao_ad_area");
-            for (var i = 0; i < kakao.length; i++) {
-              if(kakao[i]) {
-                  kakao[i].style.display="none";
-              }
-            }
-            document.getElementById("yotube-top-link").style.display="none";
-            document.getElementById("yotube-mid-link").style.display="none";
-            document.getElementById("yotube-bottom-link").style.display="none";
-        }
-    </script>
-    
-    
-    
-    
-    
-    
-       <div class="ad-banner">
-        <ins class="kakao_ad_area" style="display:none;" 
- data-ad-unit    = "DAN-a7dcRGxnP9bBkGpH" 
- data-ad-width   = "320" 
- data-ad-height  = "100"></ins> 
-<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-        </div>
-    
-    <div class="ad-banner4">
-    <ins class="kakao_ad_area" style="display:none;" 
- data-ad-unit    = "DAN-WNt4YmfZUs40aZ3W" 
- data-ad-width   = "320" 
- data-ad-height  = "100"></ins> 
-<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-     </div>
-    
-    
-        <div class="ad-banner2">
-        <ins class="kakao_ad_area" style="display:none;" 
- data-ad-unit    = "DAN-fdoJ7MyjTBTKKScE" 
- data-ad-width   = "320" 
- data-ad-height  = "250"></ins> 
-<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-         </div>
-  
-    <div class="ad-banner3">
-    <ins class="kakao_ad_area" style="display:none;" 
- data-ad-unit    = "DAN-YLcrKf2T2zxnxTKo" 
- data-ad-width   = "300" 
- data-ad-height  = "250"></ins> 
-<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-        </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div align="center">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- 수평형01 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:300px;height:100px"
-     data-ad-client="ca-pub-6600478954137725"
-     data-ad-slot="2836911515"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    </div>
-    
-    
-    <div align="center">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- 수평형02 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:300px;height:50px"
-     data-ad-client="ca-pub-6600478954137725"
-     data-ad-slot="8935416008"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    </div>
-    
-    
-    
-    
-
-<div align="center"
-   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- 사각형02 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:300px;height:200px"
-     data-ad-client="ca-pub-6600478954137725"
-     data-ad-slot="2370007652"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    </div>
+            <script type="text/javascript">
+            $("#rn_button").click(function(){
+                $(this).toggleClass('on');
+                $("#rn_con").slideToggle('fast');
+            });
+            </script>
+            <br/><!-- snap review script start contact mail : support@snapvi.co.kr --><div name="snapreview_main" class="snap_widget" id="3"></div>
+<!-- snap review end -->
 
 
-<div align="center"
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- 사각형01 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6600478954137725"
-     data-ad-slot="6883967731"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</body>
-<!-- 
-image input box
-Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-gender toggle
-Copyright (c) 2020 by Mert Cukuren (https://codepen.io/knyttneve/pen/bPpEZY)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- -->
-
-</html>
+ </body></html>
