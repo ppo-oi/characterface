@@ -1,0 +1,113 @@
+.icon-wrapper .more::after,
+#ac-globalfooter .ac-gf-more::after {
+    position: relative;
+    top: -.08em;
+}
+@media only screen and (max-width: 370px){
+    html.enhance-base-xp .tile-sweat .tile-copy {
+        position: absolute;
+        top: 17px;
+        max-width: 246px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #ac-localnav, #ac-localnav .ac-ln-title {
+        height:48px
+    }
+}
+.tile-siri .siri-callout {
+    display: flex;
+    justify-content: center;
+}
+
+.typography-value-props-headline {
+    line-height: 1.15;
+}
+
+.typography-intro-headline {
+    line-height: 1.15;
+}
+
+.typography-value-props-copy {
+    line-height: 1.34;
+}
+
+br.small-custom{
+    display:block;
+}
+@media only screen and (max-width: 734px) and (min-width: 350px){
+    br.small-custom{
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .section-hero .section-content .overview-hero-airpods-left {
+        left: 19px;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .section-hero .section-content .overview-hero-airpods-right {
+        right: 19px;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .tile-siri .inline-media-ui {
+        right: 0;
+        left: min(29px, calc(47vw - 36px));
+        bottom: -300px;
+        max-width: 330px;
+        width: 100%;
+        display: none;
+        justify-content:flex-end
+    }
+
+    html.enhance-base-xp .tile-siri .inline-media-ui {
+        display:flex
+    }
+}
+@media only screen and (max-width: 370px) {
+    .tile-connection .hardware-wrapper .video-container .inline-media-ui{
+        bottom: -339px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .tile-connection .hardware-wrapper .video-container .inline-media-ui {
+        bottom:-349px
+    }
+}
+@media only screen and (max-width: 340px) {
+    .tile-connection .hardware-wrapper .video-container .inline-media-ui {
+        bottom:-355px
+    }
+}
+@media only screen and (max-width: 320px) {
+    .tile-connection .hardware-wrapper .video-container .inline-media-ui {
+        bottom:-445px
+    }
+}
+@media only screen and (max-width: 734px) and (max-width: 350px) {
+    .tile-force-sensor .lottie-container .inline-media-ui {
+        bottom: -430px;
+    }
+}
+@media only screen and (max-width: 734px) and (max-width: 340px) {
+    .tile-force-sensor .lottie-container .inline-media-ui {
+        bottom: -434px;
+    }
+}
+@media only screen and (max-width: 734px) and (max-width: 330px) {
+    .tile-force-sensor .lottie-container .inline-media-ui {
+        bottom: -434px;
+    }
+}
+@media only screen and (max-width: 734px) and (max-width: 320px) {
+    .tile-force-sensor .lottie-container .inline-media-ui {
+        bottom: -446px;
+    }
+}
+
+
